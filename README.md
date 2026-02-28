@@ -1,4 +1,6 @@
 🌦️ Weather App: 
+
+
 A minimalist, real-time weather application built with Vanilla JavaScript and WeatherAPI.
 
 ✨ Features: 
