@@ -1,0 +1,105 @@
+/* Resetting default margins and setting a font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* A nice gradient background that fits a weather theme */
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass effect */
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Temperature styling */
+.temp p {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.temp p::after {
+    content: "°C"; /* Adds the degree symbol automatically */
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+/* Location and Time styling */
+.TimeAndLocation {
+    margin: 15px 0;
+}
+
+.TimeAndLocation p:first-child {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.TimeAndLocation p:last-child {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+/* Weather condition (Mist, Sunny, etc.) */
+.condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the icon and text */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.weather_icon {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+}
+
+/* Navigation & Search styling */
+nav {
+    width: 350px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+.search_area {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff9f43;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ee5253;
+}
